@@ -13,7 +13,7 @@ function addHerosToDOM(hero){
     `
     <img src="${hero.thumbnail.path+"."+hero.thumbnail.extension}" id = "poster"  >
     <h2 id="heroTitle"  data-id=${hero.id}>${hero.name}</h2>
-    <button id="details" data-id="${hero.id}"> details </button>
+    <button id="details" data-id="${hero.id}"> Details </button>
     <button id="favBtn" data-id="${hero.id}" data-title="${hero.name}" >Add to Favourites</button>
     `
     listOfHeroInDom.append(li);
@@ -93,16 +93,17 @@ function handleKeyAndClick(e){
         let heroId = e.target.dataset.id;
         localStorage.setItem("heroId", JSON.stringify(heroId));
         
-        window.open("./details/details.html");
+        window.open("details/detailsindex.html");
     }
     if(e.target.id === "favBtn"){
         addToFav(e.target.dataset.id, e.target.dataset.title);
     }
     if(e.target.id === "favourite"){
         localStorage.setItem("favHeros", JSON.stringify(favList));
-        window.open("./favList/fav.html");
+        window.open("favourites/favouritesindex.html");
     }
 
 }
 document.addEventListener("keyup", handleKeyAndClick);
 document.addEventListener("click", handleKeyAndClick);
+

@@ -7,8 +7,9 @@
 }
 
 body {
-	background: radial-gradient(circle closest-corner at center 500px, #ec981a, rgb(0, 0, 0) 90%)
-	no-repeat;
+	/* background: radial-gradient(circle closest-corner at center 500px, #42275a, #734b6d 90%)
+	no-repeat; */
+	background-image: url("./assets/avengers.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
 	color: antiquewhite;
@@ -45,7 +46,7 @@ body {
   }
   /*______________Buutton Style________________*/
   .btn {
-    background-color: rgb(240, 83, 10);
+    background-color: #734b6d;
     color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 15px;
@@ -53,7 +54,7 @@ body {
 	margin-bottom: 60px;
     margin-left: 10px;
     min-width: 10px;
-    border: 1px solid #01deee;
+    border: 1px solid antiquewhite;
     border-radius: 30%;
   }
   #search:hover {
@@ -63,19 +64,15 @@ body {
     transition-property: text-decoration, background-color;
     cursor: pointer; 
   }
-  #clear:hover {
-    background-color: rgb(248, 4, 4);
+  #clear:hover, #favourite:hover{
+    background-color: white;
+	color: #734b6d;
     text-decoration: underline;
-    transition-delay: 1s, 300ms;
+    /* transition-delay: 1s, 300ms; */
     transition-property: text-decoration, background-color;
     cursor: pointer; 
   }
-  #favourite:hover{
-    background-color: rgb(228, 231, 19);
-	color:rgb(0, 0, 0);
-    text-decoration: underline;
-    cursor: pointer; 
-  }
+   
   #errorMessage {
 	font-size: large;
 	color: rgb(255, 255, 255);
@@ -105,9 +102,9 @@ li {
 	color: #f3f3f3;
 	width: 300px;
 	height: 300px;
-	background: radial-gradient(circle closest-corner at center 200px, #880a0a, rgb(1, 2, 24) 70%) no-repeat;	
+	background: radial-gradient(circle closest-corner at center 200px, #7b4397, #dc2430 70%) no-repeat;	
 	border-radius: 30%;
-	border: thick double #0bb7fc;
+	border: thick double antiquewhite;
     display: inline-flex;
     overflow: hidden;
     flex-shrink: 3;
@@ -120,7 +117,7 @@ li {
 
 }
 li:hover{
-	box-shadow: 2px 2px 2px 2px rgb(252, 252, 254);
+	box-shadow: 2px 2px 2px 2px ;
 	cursor: pointer;
 }
 li img {
@@ -139,7 +136,7 @@ li #heroTitle {
 }
 li #heroTitle:hover {
 	cursor: pointer;
-	text-decoration: underline;
+	
 }
 li #favBtn, #details {
 	color: rgb(100, 8, 8);
