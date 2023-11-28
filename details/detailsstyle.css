@@ -7,8 +7,9 @@
   }
   
   body {
-    background: radial-gradient(circle closest-corner at center 500px, #c60e0e, rgb(41, 11, 11) 50%)
-    no-repeat;    
+    /* background: radial-gradient(circle closest-corner at center 500px, #c60e0e, rgb(41, 11, 11) 50%)
+    no-repeat;     */
+    background-image: url("../assets/details_bg.jpeg");
     background-size: cover;
     background-attachment: fixed;
     color: rgb(247, 238, 238);
@@ -17,7 +18,7 @@
     flex-wrap: nowrap;
   }
   
-  #detailsContaier {
+  #detailsContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -32,16 +33,12 @@
     width: fit-content;
     align-items: center;
     margin-top: 10%;
-    margin-left: 60%;
+    margin-left: 50%;
     background-attachment: fixed;
     position: fixed;
     height: 400px;
     width: 400px;
-    border-radius: 50%;
+    border-radius: 10%;
   }
   
-  /* .details{
-    margin-left: 10px;
-    margin-right: 10px;
-  } */
   
