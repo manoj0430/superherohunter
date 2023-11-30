@@ -7,8 +7,7 @@
   }
   
   body {
-    /* background: radial-gradient(circle closest-corner at center 500px, #c60e0e, rgb(41, 11, 11) 50%)
-    no-repeat;     */
+    
     background-image: url("../assets/details_bg.jpeg");
     background-size: cover;
     background-attachment: fixed;

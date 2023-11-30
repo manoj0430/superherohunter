@@ -48,7 +48,7 @@ li {
 
 }
 li:hover{
-	/* box-shadow: 12px 12px 2px 1px rgb(252, 252, 254); */
+	
 	cursor: pointer;
 }
 li img {
