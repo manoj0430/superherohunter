@@ -3,9 +3,6 @@
 let listOfHeroInDom = document.getElementById("heroList");
 
 
-console.log("Working");
-
-
 let listOfHeros  = JSON.parse(localStorage.getItem("favHeros"));
 function addHerosToDOM(hero){
     let li = document.createElement("li");
@@ -14,8 +11,8 @@ function addHerosToDOM(hero){
     `
     <img src="${hero.thumbnail.path+"."+hero.thumbnail.extension}" id = "poster"  >
     <h2 id="heroTitle"  data-id=${hero.id}>${hero.name}</h2>
-    <button id="details" data-id="${hero.id}"> details </button>
-    <button id="delete" data-id="${hero.id}"> delete </button>
+    <button id="details" data-id="${hero.id}"> Details </button>
+    <button id="delete" data-id="${hero.id}"> Delete </button>
     `
     listOfHeroInDom.append(li);
 
@@ -42,7 +39,7 @@ function handleKeyAndClick(e){
         let heroId = e.target.dataset.id;
         localStorage.setItem("heroId", JSON.stringify(heroId));
         
-        window.open("../details/details.html");
+        window.open("../details/detailsindex.html");
     }
 
     if(e.target.id === "delete"){
